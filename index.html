@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,45 +10,62 @@
 <body>
     
     <!-- Site Header -->
-    <header class="site-header">
+    <header class="site-header site-header--open">
         <div class="container site-header__container">
             <a class="logo" href="">
                 <img class="logo-img" src="img/logo.svg" alt="logo" width="236" height="44">
             </a>
-
-            <nav class="sitenav">
-                <ul class="sitenav__list">
-                    <li class="sitenav__item">
-                        <a class="sitenav__link" href="">Главная</a>
-                    </li>
-
-                    <li class="sitenav__item">
-                        <a class="sitenav__link" href="">О нас</a>
-                    </li>
-
-                    <li class="sitenav__item">
-                        <a class="sitenav__link" href="">Продукция</a>
-                    </li>
-
-                    <li class="sitenav__item">
-                        <a class="sitenav__link" href="">Процесс</a>
-                    </li>
-
-                    <li class="sitenav__item">
-                        <a class="sitenav__link" href="">Надёжность</a>
-                    </li>
-
-                    <li class="sitenav__item">
-                        <a class="sitenav__link" href="">Клиенты</a>
-                    </li>
-
-                    <li class="sitenav__item">
-                        <a class="sitenav__link" href="">Связаться с нами</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            
+            <div class="site-header__nav-wrapper sitenav">
+                <nav class="sitenav__inner">
+                    <ul class="sitenav__list">
+                        <li class="sitenav__item sitenav__item--active">
+                            <a class="sitenav__link" href="">Главная</a>
+                        </li>
+                        
+                        <li class="sitenav__item">
+                            <a class="sitenav__link" href="">О нас</a>
+                        </li>
+                        
+                        <li class="sitenav__item">
+                            <a class="sitenav__link" href="">Продукция</a>
+                        </li>
+                        
+                        <li class="sitenav__item">
+                            <a class="sitenav__link" href="">Процесс</a>
+                        </li>
+                        
+                        <li class="sitenav__item">
+                            <a class="sitenav__link" href="">Надёжность</a>
+                        </li>
+                        
+                        <li class="sitenav__item">
+                            <a class="sitenav__link" href="">Клиенты</a>
+                        </li>
+                        
+                        <li class="sitenav__item">
+                            <a class="sitenav__link" href="">Связаться с нами</a>
+                        </li>
+                    </ul>
+                    
+                    <a class="button button--small-black" href="" aria-label="Заказать кнопка" target="_blank">Заказать демо</a>
+                </nav>
+            </div> <!-- site-header__nav-wrapper -->
+            
+            <button class="toggle" type="button"></button>
+        </div> <!-- container site-header__container -->
     </header>
-
+    
+    
+    <script>
+        var elModalToggler = document.querySelector('.toggle');
+        var elModal = document.querySelector('.site-header');
+        var elModalClose = document.querySelector('.site-header--open');
+        
+        elModalToggler.addEventListener('click', function () {
+            elModal.classList.toggle('site-header--open');
+        });
+        
+    </script>
 </body>
 </html>
