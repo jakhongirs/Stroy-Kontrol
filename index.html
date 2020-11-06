@@ -10,7 +10,7 @@
 <body>
     
     <!-- Site Header -->
-    <header class="site-header site-header--open">
+    <header class="site-header">
         <div class="container site-header__container">
             <a class="logo" href="">
                 <img class="logo-img" src="img/logo.svg" alt="logo" width="236" height="44">
@@ -56,6 +56,25 @@
         </div> <!-- container site-header__container -->
     </header>
     
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero__container">
+                <h1 class="hero__heading">Умная доставка материалов для сложных строительных площадок</h1>
+                
+                <div class="hero__buttons">
+                    <a class="button button--black hero__button" href="">Заказать демо</a>
+                    <a class="button button--white" href="">Подробнее</a>
+                </div>
+
+                <img class="hero__bg" src="img/hero-bg.png" alt="Constructor image" width="1040" height="422" srcset="img/hero-bg.png 1x, img/hero-bg@2x.png 2x">
+            </div>
+        </section>
+        
+    </main>
+    
     
     <script>
         var elModalToggler = document.querySelector('.toggle');
@@ -64,8 +83,7 @@
         
         elModalToggler.addEventListener('click', function () {
             elModal.classList.toggle('site-header--open');
-        });
-        
+        }); 
     </script>
 </body>
 </html>

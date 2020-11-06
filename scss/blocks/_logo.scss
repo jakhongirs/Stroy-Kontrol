@@ -3,6 +3,10 @@
     margin-right: 15px;
     min-width: 236px;
     min-height: 44px;
+
+    &:active{
+        opacity: 0.6;
+    }
 }
 
 .logo-img{

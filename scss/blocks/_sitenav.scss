@@ -1,4 +1,5 @@
 .sitenav{
+    display: flex;
     flex-grow: 1;
 }
 
@@ -27,6 +28,11 @@
     font-size: 15px;
     line-height: 18px;
     color: $text-color;
+    transition: color 0.3s ease;
+
+    &:hover{
+        color: #036FC7;
+    }
 }
 
 .sitenav__item{
@@ -76,6 +82,7 @@
 
     .site-header{
         position: fixed;
+        z-index: 1000;
         top: 0;
         left: 0;
         width: 100%;
