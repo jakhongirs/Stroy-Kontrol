@@ -40,15 +40,15 @@
     color: $heading-color;
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 465px){
     .construction__container{
         padding-top: 51px;
-        padding-bottom: 64px;
+        padding-bottom: 30px;
     }
 
     .construction__heading{
         font-size: 25px;
-        line-height: 48px;
+        line-height: 35px;
     }
     
     .construction__text{
@@ -57,7 +57,7 @@
     }
 
     .construction__bg{
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .construction__description{
