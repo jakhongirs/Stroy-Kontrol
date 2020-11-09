@@ -199,18 +199,19 @@
 @media only screen and (max-width: 540px){
     .materials__highlighted--text,
     .materials__footer-text{
-        font-size: 18px;
+        font-size: 15px;
+        line-height: 30px;
     }
 
     .materials__heading{
-        margin-bottom: 11px;
+        margin-bottom: 10px;
         font-size: 25px;
         line-height: 48px;
     }
     
     .materials__text{
-        margin-bottom: 20px;
-        font-size: 18px;
-        line-height: 32px;
+        margin-bottom: 25px;
+        font-size: 15px;
+        line-height: 20px;
     }
 }

@@ -1,0 +1,211 @@
+.advantages__container{
+    padding-top: 62px;
+    padding-bottom: 72px;
+}
+
+.advantages__heading{
+    margin-top: 0;
+    margin-bottom: 17px;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: $heading-color;
+    position: relative;
+    
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 60%;
+        min-width: 42px;
+        min-height: 40px;
+        background-image: url("../img/leaves.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+}
+
+.advantages__text{
+    margin-top: 0;
+    margin-bottom: 48px;
+    max-width: 857px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: $text-color;
+}
+
+.advantages__list{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 62px;
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantages__item{
+    max-width: 333px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &::before{
+        content: "";
+        width: 48px;
+        height: 48px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+}
+
+.advantages__item--cleaning{
+    &::before{
+        background-image: url("../img/cleaning.svg");
+    }
+}
+
+.advantages__item--recycling{
+    &::before{
+        background-image: url("../img/recycling.svg");
+    }
+}
+
+.advantages__item--influencing{
+    &::before{
+        background-image: url("../img/influencing.svg");
+    }
+}
+
+.advantages__title{
+    margin-top: 19px;
+    margin-bottom: 11px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: $heading-color;
+}
+
+.advantages__description{
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $text-color;
+}
+
+.advantages__package{
+    padding: 40px 45px;
+    background-color: #F6F8F9;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advantages__package-text{
+    font-size: 18px;
+    line-height: 32px;
+    color: $heading-color;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    &::before{
+        content: "";
+        min-width: 40px;
+        min-height: 40px;
+        background-image: url("../img/hands.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        margin-right: 24px;
+    }
+}
+
+.advantages__package-text-mark{
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 1025px){
+    .advantages__list{
+        margin-left: -16px;
+        justify-content: center;
+        margin-top: -30px;
+    }
+    
+    .advantages__item{
+        margin-right: 16px;
+        margin-left: 16px;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    .advantages__item{
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 745px){
+    .advantages__package{
+        padding: 40px 45px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .advantages__package-text{
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        margin-top: 0;
+        text-align: center;
+
+        &::before{
+            margin-right: 0px;
+        }
+    }
+
+    .advantages__package-text-mark{
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 420px){
+    .advantages__container{
+        padding-top: 31px;
+        padding-bottom: 36px;
+    }
+
+    .advantages__heading{
+        font-size: 25px;
+        margin-bottom: 11px;
+    }
+
+    .advantages__text{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .advantages__package-text{
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+
