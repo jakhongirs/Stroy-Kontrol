@@ -5,7 +5,8 @@
   text-decoration: none;
   font-family: "Arial" sans-serif;
   transition: background-color 0.3s ease,
-  color 0.3s ease;
+  color 0.3s ease,
+  border 0.3s ease;
   font-size: 17px;
   line-height: 24px;
   white-space: nowrap;
@@ -18,8 +19,7 @@
   }
 
   &--black:hover{
-    background-color: white;
-    color: #212B31;
+    background: #2e3c44;
     box-shadow: none;
   }
   
@@ -40,14 +40,12 @@
 
   &--white{
     color: #212B31;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border: 1px solid #DADEDF;
   }
 
   &--white:hover{
-    background-color: #212B31;
-    color: white;
-    border: 1px solid transparent;
+    border: 1px solid #212B31;
   }
 
   &--black:active,
